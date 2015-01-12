@@ -85,7 +85,7 @@ public class Solver {
 		// Sort by most commonly occurring number in rows/columns/3x3
 		Comparator<Integer> comparator2 = new Comparator<Integer>() {
 			public int compare(Integer c1, Integer c2) {
-				return fCheck.commonRC3(c1,availableSpots.get(0).i,
+				return fCheck.commonRC3(c2,availableSpots.get(0).i,
 						availableSpots.get(0).j) -
 					fCheck.commonRC3(c1,availableSpots.get(0).i,
 						availableSpots.get(0).j);
